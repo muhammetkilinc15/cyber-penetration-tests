@@ -29,6 +29,7 @@ In short: the point is not to break things, but to understand _why_ they break, 
 | 10  | [Login Admin](10-login-admin-sql-injection-1.md)                     | SQL Injection             | Log in as admin by injecting `' OR TRUE --` into the email field.                       |
 | 11  | [Admin Section](11-admin-section-security-misconfiguration.md)       | Security Misconfiguration | Discover and access the hidden `/administration` route as an admin user.                |
 | 12  | [Password Strength](12-password-strength-broken-authentication.md)   | Broken Authentication     | Crack the admin's weak password (`admin123`) using brute-force / dictionary attacks.    |
+| 13  | [CAPTCHA Bypass](13-captcha-Bypass-Broken-Anti-Automation.md)        | Broken Anti-Automation    | Replay a pinned `captchaId`/`captcha` pair via Burp to flood the feedback endpoint.     |
 
 ### Conclusion
 
