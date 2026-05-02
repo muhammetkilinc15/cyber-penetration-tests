@@ -15,18 +15,20 @@ In short: the point is not to break things, but to understand _why_ they break, 
 
 ### Table of Contents
 
-1. [Score Board](1-score-board.md)
-2. [DOM XSS](2-dom-xss.md)
-3. [Bonus Payload](3-bonus-payload.md)
-4. [Privacy Policy](4-privacy-policy.md)
-5. [Bully Chatbot](5-bully-chatbot.md)
-6. [Error Handling](6-error-handling.md)
-7. [Missing Encoding](7-missing-encoding.md)
-8. [Outdated Allowlist](8-unvalidated-redirects.md)
-9. [Zero Stars](9-zero-star-input-validation.md)
-10. [Login Admin](10-login-admin-sql-injection-1.md)
-11. [Admin Section](11-admin-section-security-misconfiguration.md)
-12. [Password Strength](12-password-strength-broken-authentication.md)
+| #   | Challenge                                                            | Category                  | Short Description                                                                       |
+| --- | -------------------------------------------------------------------- | ------------------------- | --------------------------------------------------------------------------------------- |
+| 1   | [Score Board](1-score-board.md)                                      | Information Disclosure    | Find the hidden score board page by inspecting the application's source code.          |
+| 2   | [DOM XSS](2-dom-xss.md)                                              | Cross-Site Scripting      | Inject a malicious iframe into the search box to trigger a JavaScript alert.            |
+| 3   | [Bonus Payload](3-bonus-payload.md)                                  | Cross-Site Scripting      | Extend the DOM XSS attack to embed an external Soundcloud player via iframe.            |
+| 4   | [Privacy Policy](4-privacy-policy.md)                                | User Flow                 | Register, log in, and read the application's privacy policy.                            |
+| 5   | [Bully Chatbot](5-bully-chatbot.md)                                  | Business Logic            | Pressure the support chatbot until it hands out a discount coupon code.                 |
+| 6   | [Error Handling](6-error-handling.md)                                | Improper Error Handling   | Provoke unhandled errors that leak server version and SQL details.                      |
+| 7   | [Missing Encoding](7-missing-encoding.md)                            | Improper Input Handling   | Fix a broken image URL by manually encoding the `#` character as `%23`.                 |
+| 8   | [Outdated Allowlist](8-unvalidated-redirects.md)                     | Unvalidated Redirects     | Find legacy crypto wallet links still allowed by the redirect allowlist.                |
+| 9   | [Zero Stars](9-zero-star-input-validation.md)                        | Input Validation          | Bypass client-side validation to submit a zero-star feedback via DOM tampering.         |
+| 10  | [Login Admin](10-login-admin-sql-injection-1.md)                     | SQL Injection             | Log in as admin by injecting `' OR TRUE --` into the email field.                       |
+| 11  | [Admin Section](11-admin-section-security-misconfiguration.md)       | Security Misconfiguration | Discover and access the hidden `/administration` route as an admin user.                |
+| 12  | [Password Strength](12-password-strength-broken-authentication.md)   | Broken Authentication     | Crack the admin's weak password (`admin123`) using brute-force / dictionary attacks.    |
 
 ### Conclusion
 
