@@ -9,4 +9,8 @@
 5. Observe "Search Results" HTML is injected with Soundcloud iframe
 6. Observe OWASP Juice Shop Jingle is playing on the webpage
 
-![alt text](bonus-payload.png)
+![alt text](3-bonus-payload.png)
+
+### Description
+
+This challenge is an extension of the DOM XSS challenge, where you are required to use a specific bonus payload that embeds a Soundcloud player. By injecting this iframe into the search box and pressing Enter, you will see that the "Search Results" section of the webpage is modified to include the Soundcloud player, and the OWASP Juice Shop Jingle will start playing. This demonstrates how an attacker can inject complex payloads that not only execute JavaScript but also embed external content, further emphasizing the risks associated with DOM XSS vulnerabilities.
