@@ -25,6 +25,8 @@ In short: the point is not to break things, but to understand _why_ they break, 
 8. [Outdated Allowlist](8-unvalidated-redirects.md)
 9. [Zero Stars](9-zero-star-input-validation.md)
 10. [Login Admin](10-login-admin-sql-injection-1.md)
+11. [Admin Section](11-admin-section-security-misconfiguration.md)
+12. [Password Strength](12-password-strength-broken-authentication.md)
 
 ### Conclusion
 
